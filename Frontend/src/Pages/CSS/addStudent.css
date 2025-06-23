@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.add-form-container {
+  background-color: #0e1117;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background-color: #1a1e28;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid #2e3a59;
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #2b2f3b;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0061b0;
+  box-shadow: 0 0 10px #4a90e2;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  label,
+  input,
+  select,
+  button {
+    font-size: 0.95rem;
+  }
+}

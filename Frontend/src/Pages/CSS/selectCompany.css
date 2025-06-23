@@ -1,0 +1,67 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0e1117;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.company-card {
+  background-color: #1a1e28;
+  border: 2px solid #2e3a59;
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.company-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.company-card span {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.company-card:hover {
+  background-color: #222939;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #4a90e2;
+}
